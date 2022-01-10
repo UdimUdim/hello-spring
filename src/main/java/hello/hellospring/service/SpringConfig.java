@@ -1,5 +1,6 @@
 package hello.hellospring.service;
 
+import hello.hellospring.aop.*;
 import hello.hellospring.repository.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.context.annotation.*;
@@ -18,6 +19,13 @@ public class SpringConfig {
         return new MemberService(memberRepository);
 
     }
+
+    /*
+    @Bean
+    public TimeTraceAop timeTraceAop(){
+        return new TimeTraceAop();
+    }
+     */
 
 //    @Bean
 //    public MemberRepository memberRepository(){
